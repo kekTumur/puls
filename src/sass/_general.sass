@@ -50,6 +50,10 @@
         width: 300px
         height: 50px
         font-size: 16px
+    &_form
+        width: 100%
+        height: 55px
+        font-size: 16px
 .header
     display: flex
     justify-content: space-between
@@ -109,4 +113,65 @@
         a
             text-decoration: underline
             color: #ff0000
+.consult
+    min-height: 680px
+    padding: 100px 0 92px
+    background: url(../img/sec_bg.jpg) center center / cover no-repeat
+    color: #ffffff
+    &__title
+        font-size: 36px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+    &__descr
+        margin: 80px 0 35px
+        font-size: 20px
+        line-height: 1.2
+        font-weight: 500
+.feed-form
+    display: flex
+    flex-direction: column
+    width: 300px
+    input
+        height: 50px
+        background-color: #ffffff
+        border-radius: 5px
+        border: none
+        margin-bottom: 15px
+        padding: 20px 0 18px 20px
+        font-size: 14px
+        font-weight: 300
+        color: #4b4b4b
+        &:nth-child(3)
+            margin-bottom: 20px
+.carousel
+    padding: 81px 0
+    &__slider
+        position: relative
+        width: 750px
+        margin: 0 auto
+    .slick-prev, .slick-next
+        top: 50%
+        left: -66px
+        transform: translateY(-50%)
+        position: absolute
+        border: none
+        background: none
+        outline: none
+        img
+            width: 31px
+            height: 50px
+    .slick-next
+        right: -66px
+        left: auto
+    .slick-dots
+        display: flex
+        justify-content: space-between
+        list-style: none
+        li
+            button
+                background-color: #fff
+                border: none
+
+            
     
