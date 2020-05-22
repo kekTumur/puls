@@ -3,7 +3,6 @@ $(document).ready(function(){
         speed: 300,
         prevArrow: '<button type="button" class="slick-prev"><img src="../img/arrow_left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../img/arrow_right.svg"></button>',
-        dots: true,
         responsive: [
             {
                 breakpoint: 992,
