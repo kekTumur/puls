@@ -175,6 +175,12 @@
 .catalog
     color: #0d0d0d
     padding-bottom: 103px
+    &__content
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        &_active
+            display: flex
     &__title
         text-align: center
         font-size: 30px
@@ -210,11 +216,15 @@
             background-color: $main-color
             color: #ffffff
             border: none
+            &:hover
+                box-shadow: none
     &-item
         width: 300px
         min-height: 440px
         border: 2px solid #e8e8e8
         padding: 20px 20px 27px
+        overflow: hidden
+        margin-bottom: 20px
         &__img
             display: block
             margin: 0 auto
@@ -262,7 +272,87 @@
             font-size: 20px
             font-weight: 700
             color: #050505
-
-
-            
+        &__wrapper
+            display: flex
+            width: calc(200% + 40px)
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: .5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list
+            position: relative
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: .5s all
+            padding-left: 19px
+            margin-bottom: 0
+            list-style-type: none
+            li
+                font-size: 14px
+                font-weight: 300
+                color: #555555
+                margin-bottom: 20px
+                position: relative
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 5px
+                    height: 5px
+                    background-color: $main-color
+                    left: -14px
+                    top: 7px
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+        &__back
+            display: block
+            left: 50%
+            transform: translateX(calc(-50% - 19px))
+            position: absolute
+            bottom: 19px
+            font-size: 14px
+            font-weight: 500
+            color: $main-color
+            text-decoration: underline
+            text-transform: uppercase
+.reviews
+    padding-bottom: 71px
+    &__title
+        margin-bottom: 70px
+        text-align: center
+        font-size: 30px
+        font-weight: 700
+        text-transform: uppercase
+        color: #0d0d0d
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__img
+        margin-right: 62px
+    &__text
+        &-name
+            font-size: 18px
+            font-weight: 700
+            color: #0d0d0d
+        &-subname
+            font-size: 14px
+            font-weight: 300
+            color: #646464
+            margin-bottom: 19px
+        &-descr
+            font-size: 16px
+            font-weight: 300
+            color: #0d0d0d
+    hr
+        margin: 48px 0 53px
+        border-bottom: none
+        background-color: #f6f6f6
+    
     
