@@ -64,3 +64,32 @@ for (let link of links) {
         } else link.parentNode.previousElementSibling.classList.toggle('catalog-item__content_active');
     });
 }
+
+let btns = document.querySelectorAll('.header_btn');
+for (let btn of Array.from(btns)) btn.addEventListener('click', () => overlay('consultation'));
+
+let buyBtns = document.querySelectorAll('.buy');
+for (let btn of Array.from(buyBtns)) btn.addEventListener('click', () => overlay('order'));
+
+let closes = document.querySelectorAll('.modal__close');
+for (let close of Array.from(closes)) close.addEventListener('click', () => overlay('modal_isModal'));
+
+const overlay = sect => {
+    document.querySelector(`.${sect}`).classList.toggle('modal_isModal');
+    document.querySelector('.overlay').classList.toggle('overlay_isOverlay');
+}
+
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+$('form').submit(function (e) {
+    $.ajax({
+        type: 'POST',
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val('');
+
+        $('form').trigger();
+    });
+    return false;
+});

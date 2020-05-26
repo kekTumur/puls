@@ -392,6 +392,56 @@
         color: #ffffff
         font-size: 20px
         margin: 0
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.56)
+    &_isOverlay
+        display: block
+.modal
+    padding: 38px 0 40px
+    text-align: center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50% , -50%)
+    width: 380px
+    min-height: 400px
+    background-color: #f2f2f2
+    &__close
+        position: absolute
+        top: 0
+        right: -41px
+        font-size: 41px
+        line-height: 21px
+        color: $main-color
+        cursor: pointer
+    &__title
+        font-size: 19px
+        font-weight: 700
+        color: #0d0d0d
+        margin-bottom: 5px
+    &__subtitle
+        font-size: 14px
+        font-weight: 500
+        color: #0d0d0d
+    form
+        margin: 25px auto
+    &_alert
+        padding: 38px 76px 43px 81px
+        min-height: 140px
+
+.consultation
+    display: none
+.order
+    display: none
+.thanks
+    display: none
+.modal_isModal
+    display: block
     
 
     
