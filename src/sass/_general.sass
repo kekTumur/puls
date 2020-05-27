@@ -83,7 +83,7 @@
         a
             color: #ffffff
             margin-bottom: 3px
-.adv
+.advantages
     min-height: 470px
     padding: 70px 0 95px
     background-color: #f6f6f6
@@ -100,6 +100,11 @@
         justify-content: space-between
     &__icon
         width: 247px
+    .animated
+        animation: heartbeat 1.5s ease infinite 
+        animation-delay: 3s
+        &:hover
+            animation-play-state: paused
     &__icon-head
         margin: 38px 0 26px
         font-size: 18px
@@ -442,7 +447,17 @@
     display: none
 .modal_isModal
     display: block
-    
+.pageup
+    display: none
+    position: fixed
+    bottom: 40px
+    right: 40px
+    width: 40px
+    height: 40px
+    &_visible
+        display: block
+    img
+        width: 100%
 
     
     

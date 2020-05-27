@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +9,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> -->
     <script src="https://kit.fontawesome.com/0e580c88db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="promo">
+    <div class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a class="header__logo">
@@ -58,34 +58,34 @@
             </div>
         </div>
     </div>
-    <section class="adv">
+    <div class="advantages">
         <div class="container">
-            <div class="adv__title">НАШИ ПРЕИМУЩЕСТВА</div>
-            <div class="adv__icons">
-                <div class="adv__icon">
+            <div class="advantages__title">НАШИ ПРЕИМУЩЕСТВА</div>
+            <div class="advantages__icons">
+                <div class="advantages__icon">
                     <img src="img/ico_1.png" alt="ico_1">
-                    <div class="adv__icon-head">Делимся опытом</div>
-                    <div class="adv__icon-descr">Наши сотрудники всегда готовы поделиться своим опытом,
+                    <div class="advantages__icon-head">Делимся опытом</div>
+                    <div class="advantages__icon-descr">Наши сотрудники всегда готовы поделиться своим опытом,
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
-                <div class="adv__icon">
-                    <img src="img/ico_2.png" alt="ico_2">
-                    <div class="adv__icon-head">Заботимся о здоровье</div>
-                    <div class="adv__icon-descr">Мы работаем для того,
+                <div class="advantages__icon">
+                    <img src="img/ico_2.png" alt="ico_2" class="animated">
+                    <div class="advantages__icon-head">Заботимся о здоровье</div>
+                    <div class="advantages__icon-descr">Мы работаем для того,
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                     </div>
                 </div>
-                <div class="adv__icon">
+                <div class="advantages__icon">
                     <img src="img/ico_3.png" alt="ico_3">
-                    <div class="adv__icon-head">Учим бегать</div>
-                    <div class="adv__icon-descr">Помогаем с обучением
+                    <div class="advantages__icon-head">Учим бегать</div>
+                    <div class="advantages__icon-descr">Помогаем с обучением
                         правильной технике бега!
                         Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING.</a></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="consult">
         <div class="container">
@@ -106,7 +106,7 @@
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__slider">
                 <div>
@@ -120,8 +120,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="catalog">
+    </div>
+    <div class="catalog">
         <div class="container">
             <div class="catalog__title">Каталог пульсометров</div>
             <ul class="catalog__tabs">
@@ -386,11 +386,11 @@
             </div>
 
         </div>
-    </section>
-    <section class="reviews">
+    </div>
+    <div class="reviews">
         <div class="container">
             <div class="reviews__title">отзывы клиентов</div>
-            <div class="reviews__item">
+            <div class="reviews__item wow animate__animated animate__bounceInUp">
                 <div class="reviews__img">
                     <img src="img/avatar_1.jpg" alt="avatar_1">
                 </div>
@@ -405,7 +405,7 @@
                 </div>
             </div>
             <hr>
-            <div class="reviews__item">
+            <div class="reviews__item wow animate__animated animate__bounceInUp">
                 <div class="reviews__img"><img src="img/avatar_2.jpg" alt="avatar_2"></div>
                 <div class="reviews__text">
                     <div class="reviews__text-name">Иван Сёмочкин</div>
@@ -418,7 +418,7 @@
                 </div>
             </div>
             <hr>
-            <div class="reviews__item">
+            <div class="reviews__item wow animate__animated animate__bounceInUp">
                 <div class="reviews__img"><img src="img/avatar_3.jpg" alt="avatar_3"></div>
                 <div class="reviews__text">
                     <div class="reviews__text-name">Юлия Дашкина</div>
@@ -431,11 +431,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <footer class="footer">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.434400865218!2d49.232075315804124!3d55.76832689826222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eadff6b9355a3%3A0xc05cc78e4690838a!2z0YPQuy4g0J3QvtC60YHQuNC90YHQutC40Lkg0KHQv9GD0YHQuiwgNywg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAxNDA!5e0!3m2!1sru!2sru!4v1590345335702!5m2!1sru!2sru"
-            width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.434400865218!2d49.232075315804124!3d55.76832689826222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eadff6b9355a3%3A0xc05cc78e4690838a!2z0YPQuy4g0J3QvtC60YHQuNC90YHQutC40Lkg0KHQv9GD0YHQuiwgNywg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAxNDA!5e0!3m2!1sru!2sru!4v1590345335702!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0">
         </iframe>
 
@@ -481,12 +480,15 @@
                 в ближайшее время!</div>
         </div>
     </div>
-
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <a class="pageup" href="#up">
+        <img src="img/chevron-circle-up-solid.svg" alt="up">
+    </a>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
